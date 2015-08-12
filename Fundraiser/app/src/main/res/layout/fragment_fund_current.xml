@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.irislim.fundraiser.FundCurrentFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/fund_current_fragment_title"
+            android:padding="16dp"
+            android:background="#ffcdcdcd"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:id="@+id/fragment_fund_current"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fund_current_fragment_description"
+            android:padding="16dp"
+            android:background="#ffcdcdcd"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+
+</FrameLayout>
