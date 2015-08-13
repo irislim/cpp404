@@ -2,33 +2,211 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context="com.irislim.fundraiser.FundCurrentFragment">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="8dp">
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
 
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="@string/fund_current_fragment_title"
-            android:padding="16dp"
-            android:background="#ffcdcdcd"
-            android:layout_gravity="center_horizontal|top"
-            android:textSize="24dp"
-            android:textStyle="bold"
-            android:id="@+id/fragment_fund_current"
-            android:layout_margin="8dp" />
-
-        <TextView
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/fund_current_fragment_description"
-            android:padding="16dp"
-            android:background="#ffcdcdcd"
-            android:layout_gravity="center_horizontal|top"
-            android:textSize="24dp"
-            android:textStyle="bold"
-            android:id="@+id/textView"
-            android:layout_margin="8dp" />
-    </LinearLayout>
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/fund_current_fragment_title"
+                android:padding="16dp"
+                android:background="#ffcdcdcd"
+                android:layout_gravity="center_horizontal|top"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:id="@+id/fragment_fund_current"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fund_current_fragment_description"
+                android:padding="16dp"
+                android:background="#ffcdcdcd"
+                android:layout_gravity="center_horizontal|top"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/fragment_fund_desc"
+                android:layout_margin="8dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffcdcdcd"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fund_current_fragment_progress"
+                    android:textSize="20sp"
+                    android:id="@+id/fragment_fund_progress"
+                    android:layout_gravity="top|left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50%"
+                    android:textSize="20sp"
+                    android:id="@+id/fragment_fund_progress_value"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/fragment_fund_progressbar"
+                    android:focusableInTouchMode="false"
+                    android:max="100"
+                    android:progress="50" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffcdcdcd"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fund_current_fragment_total"
+                    android:textSize="20sp"
+                    android:id="@+id/fragment_fund_total"
+                    android:layout_gravity="top|left" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$12345"
+                    android:layout_gravity="top|center_horizontal"
+                    android:textSize="20sp"
+                    android:id="@+id/fragment_fund_total_value"
+                    android:paddingLeft="8sp"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffcdcdcd"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fund_current_fragment_average"
+                    android:textSize="20sp"
+                    android:id="@+id/fragment_fund_average"
+                    android:layout_gravity="top|left" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$12345"
+                    android:layout_gravity="top|center_horizontal"
+                    android:textSize="20sp"
+                    android:id="@+id/fragment_fund_average_value"
+                    android:paddingLeft="8sp"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffcdcdcd"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fund_current_fragment_goal"
+                    android:textSize="20sp"
+                    android:id="@+id/fragment_fund_goal"
+                    android:layout_gravity="top|left" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="$12345"
+                    android:layout_gravity="top|center_horizontal"
+                    android:textSize="20sp"
+                    android:id="@+id/fragment_fund_goal_value"
+                    android:paddingLeft="8sp"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffcdcdcd"
+                android:padding="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fund_current_fragment_post_days_ago"
+                    android:textSize="20sp"
+                    android:id="@+id/fragment_fund_duration"
+                    android:layout_gravity="top|left" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5 days ago"
+                    android:layout_gravity="top|center_horizontal"
+                    android:textSize="20sp"
+                    android:id="@+id/fragment_fund_duration_value"
+                    android:paddingLeft="8sp"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fragment_fund_edit"
+                android:id="@+id/fragment_fund_edit"
+                android:layout_gravity="center_horizontal"
+                style="@style/Widget.AppCompat.Button"
+                android:background="@color/accent_material_light"
+                android:layout_margin="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

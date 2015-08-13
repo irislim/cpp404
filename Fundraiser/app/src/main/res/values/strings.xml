@@ -14,10 +14,11 @@
     <string name="action_settings">Settings</string>
 
     <string name="fund_current_fragment_title">Fund Raising id: 000</string>
-    <string name="fund_current_fragment_description">Help us raise $5000</string>
+    <string name="fund_current_fragment_description">Help us raise $5000 Help us raise $5000 Help us raise $5000</string>
     <string name="fund_current_fragment_progress">Progress:</string>
     <string name="fund_current_fragment_total">Total Payments:</string>
     <string name="fund_current_fragment_average">Average Donation:</string>
     <string name="fund_current_fragment_goal">Goal:</string>
     <string name="fund_current_fragment_post_days_ago">Posted:</string>
+    <string name="fragment_fund_edit">Edit</string>
 </resources>
