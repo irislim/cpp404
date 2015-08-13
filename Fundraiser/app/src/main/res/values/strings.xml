@@ -21,4 +21,9 @@
     <string name="fund_current_fragment_goal">Goal:</string>
     <string name="fund_current_fragment_post_days_ago">Posted:</string>
     <string name="fragment_fund_edit">Edit</string>
+
+    <string name="fund_past_fragment_title">Fund Raising id: 000</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

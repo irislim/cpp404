@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.irislim.fundraiser.FundPastFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fund_past_fragment_title"
+            android:padding="16dp"
+            android:background="#ffcdcdcd"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:id="@+id/fund_past_title_001"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fund_past_fragment_title"
+            android:padding="16dp"
+            android:background="#ffcdcdcd"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:id="@+id/fund_past_title_002"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fund_past_fragment_title"
+            android:padding="16dp"
+            android:background="#ffcdcdcd"
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:id="@+id/fund_past_title_003"
+            android:layout_margin="8dp" />
+    </LinearLayout>
+
+</FrameLayout>
