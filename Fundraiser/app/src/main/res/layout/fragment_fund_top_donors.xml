@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.irislim.fundraiser.FundTopDonorsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="#ffcdcdcd"
+            android:layout_margin="8dp"
+            android:id="@+id/">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fund_top_donors_fragment_title"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:id="@+id/fund_top_donors_title_001"
+                android:layout_gravity="top|left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$100"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:id="@+id/fund_top_donors_value_001"
+                android:gravity="right"
+                android:layout_gravity="top|center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="#ffcdcdcd"
+            android:layout_margin="8dp"
+            android:id="@+id/">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fund_top_donors_fragment_title"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:id="@+id/fund_top_donors_title_002"
+                android:layout_gravity="top|left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$100"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:id="@+id/fund_top_donors_value_002"
+                android:gravity="right"
+                android:layout_gravity="top|center_horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="#ffcdcdcd"
+            android:layout_margin="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fund_top_donors_fragment_title"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:id="@+id/fund_top_donors_title_003"
+                android:layout_gravity="top|left" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$100"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:id="@+id/fund_top_donors_value_003"
+                android:gravity="right"
+                android:layout_gravity="top|center_horizontal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
