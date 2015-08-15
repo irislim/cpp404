@@ -1,0 +1,152 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.irislim.fundraiser.FundItemFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:id="@+id/fund_item_image"
+                android:layout_gravity="center_horizontal|top"
+                android:background="#ffcdcdcd"
+                android:paddingBottom="200dp"
+                android:layout_margin="8dp" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/fund_current_fragment_description"
+                android:background="#ffcdcdcd"
+                android:layout_margin="8dp"
+                android:id="@+id/"
+                android:padding="8dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:layout_margin="8dp">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fund_item_progressbar"
+                    android:progress="100"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:indeterminate="false" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fund_item_fragment_donate_button"
+                    android:id="@+id/button"
+                    android:background="@color/accent_material_light"
+                    android:layout_gravity="bottom" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffcdcdcd"
+                    android:padding="8dp"
+                    android:layout_margin="8dp"
+                    android:id="@+id/">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20%"
+                        android:id="@+id/fund_item_raised_value"
+                        android:autoText="false"
+                        android:layout_marginRight="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fund_item_fragment_raised"
+                        android:id="@+id/fund_item_raised" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffcdcdcd"
+                    android:padding="8dp"
+                    android:layout_margin="8dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$1000"
+                        android:id="@+id/fund_item_donated_value"
+                        android:autoText="false"
+                        android:layout_marginRight="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fund_item_fragment_donated"
+                        android:id="@+id/fund_item_donated" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#ffcdcdcd"
+                    android:padding="8dp"
+                    android:layout_margin="8dp"
+                    android:id="@+id/">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="95"
+                        android:id="@+id/fund_item_donors_value"
+                        android:autoText="false"
+                        android:layout_marginRight="8dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fund_item_fragment_donors"
+                        android:id="@+id/fund_item_donors" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/fund_item_fragment_long_description"
+                android:id="@+id/fund_item_long_description"
+                android:background="#ffcdcdcd"
+                android:layout_margin="8dp"
+                android:padding="8dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
