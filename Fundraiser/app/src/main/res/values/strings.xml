@@ -35,6 +35,14 @@
     <string name="fund_payment_fragment_custom">Custom Amount: $</string>
     <string name="fund_payment_fragment_pay_button">Pay with Card</string>
 
+    <string name="fund_edit_fragment_title">Title: </string>
+    <string name="fund_edit_fragment_goal">Goal: $</string>
+    <string name="fund_edit_fragment_long_description">Long description: </string>
+    <string name="fund_edit_fragment_choose_pic_button">Choose picture</string>
+    <string name="fund_edit_fragment_take_pic_button">Take picture</string>
+    <string name="fund_edit_fragment_archive_button">Archive</string>
+    <string name="fund_edit_fragment_save_button">Save</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
