@@ -7,8 +7,8 @@
     <!-- As the main content view, the view below consumes the entire
          space available using match_parent in both dimensions. -->
     <FrameLayout android:id="@+id/container" android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
+        android:layout_height="match_parent">
+<!--
         <TabHost
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -21,7 +21,7 @@
                 android:orientation="vertical">
 
                 <TabWidget
-                    android:id="@+id/tabWidget"
+                    android:id="@android:id/tabs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"></TabWidget>
 
@@ -40,23 +40,40 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:name="com.irislim.fundraiser.FundCurrentFragment"
-                            android:id="@+id/fragment" />
+                            android:id="@+id/fund_current_fragment"
+                            tools:layout="@layout/fragment_fund_current" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/tab2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:orientation="vertical">
+
+                        <fragment
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:name="com.irislim.fundraiser.FundPastFragment"
+                            android:id="@+id/fund_past_fragment"
+                            tools:layout="@layout/fragment_fund_past" />
+                    </LinearLayout>
 
                     <LinearLayout
                         android:id="@+id/tab3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical"></LinearLayout>
+                        android:orientation="vertical">
+                        <fragment
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:name="com.irislim.fundraiser.FundTopDonorsFragment"
+                            android:id="@+id/fund_top_donors_fragment"
+                            tools:layout="@layout/fragment_fund_top_donors" />
+                    </LinearLayout>
                 </FrameLayout>
             </LinearLayout>
         </TabHost>
+        -->
     </FrameLayout>
 
     <!-- android:layout_gravity="start" tells DrawerLayout to treat

@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Fundraiser</string>
 
-    <string name="title_section_manage_funds">Manage Funds</string>
-    <string name="title_section_manage_dogs">Manage Dogs</string>
-    <string name="title_section_manage_cats">Manage Cats</string>
-    <string name="title_section_manage_other_pets">Manage Other Pets</string>
+    <string name="title_section_home">Home</string>
+    <string name="title_section_current_fund">Current Fund</string>
+    <string name="title_section_past_fund">Past Fund</string>
+    <string name="title_section_top_donors">Top Donors</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
