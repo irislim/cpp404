@@ -56,7 +56,8 @@
                     android:text="@string/fund_item_fragment_donate_button"
                     android:id="@+id/button"
                     android:background="@color/accent_material_light"
-                    android:layout_gravity="bottom" />
+                    android:layout_gravity="bottom"
+                    android:onClick="buttonOnClick" />
             </LinearLayout>
 
             <LinearLayout
