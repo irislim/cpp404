@@ -4,151 +4,166 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="16dp">
-
-        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
-            android:text="@string/fund_current_fragment_description"
-            android:background="#ffcdcdcd"
-            android:id="@+id/fund_current_description"
-            android:padding="8dp"
-            android:layout_margin="8dp" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="$5"
-            android:id="@+id/fund_payment_value001"
-            android:checked="false"
-            android:padding="8dp"
-            android:layout_marginLeft="8dp" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="$15"
-            android:id="@+id/fund_payment_value002"
-            android:padding="8dp"
-            android:checked="false"
-            android:layout_marginLeft="8dp" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="$25"
-            android:id="@+id/fund_payment_value003"
-            android:padding="8dp"
-            android:checked="false"
-            android:layout_marginLeft="8dp" />
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="-8dp">
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/fund_payment_fragment_custom"
-                android:id="@+id/fund_payment_custom"
-                android:checked="false"
-                android:padding="8dp"
-                android:layout_marginLeft="8dp" />
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:ems="10"
-                android:id="@+id/fund_payment_custom_amt"
-                android:text="132" />
-        </LinearLayout>
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3" >
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="24dp">
+            android:layout_height="match_parent"
+            android:layout_margin="16dp">
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:text="Name you want to appear as"
-                android:ems="10"
-                android:id="@+id/fund_payment_display_name"
-                android:layout_gravity="center_horizontal"
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/fund_current_fragment_description"
                 android:background="#ffcdcdcd"
-                android:padding="8dp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:text="Name on card"
-                android:ems="10"
-                android:id="@+id/fund_payment_card_name"
-                android:layout_gravity="center_horizontal"
-                android:background="#ffcdcdcd"
+                android:id="@+id/fund_current_description"
                 android:padding="8dp"
-                android:layout_marginTop="16dp" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                android:ems="10"
-                android:id="@+id/fund_payment_card_num"
-                android:layout_gravity="center_horizontal"
-                android:background="#ffcdcdcd"
-                android:padding="8dp"
-                android:layout_marginTop="16dp"
-                android:text="Card number" />
+                android:layout_margin="8dp" />
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="16dp"
-                android:layout_gravity="center_horizontal">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$5"
+                        android:id="@+id/fund_payment_value001"
+                        android:checked="false"
+                        android:padding="8dp"
+                        android:layout_marginLeft="8dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$15"
+                        android:id="@+id/fund_payment_value002"
+                        android:padding="8dp"
+                        android:checked="false"
+                        android:layout_marginLeft="8dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$25"
+                        android:id="@+id/fund_payment_value003"
+                        android:padding="8dp"
+                        android:checked="false"
+                        android:layout_marginLeft="8dp" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fund_payment_fragment_custom"
+                        android:id="@+id/fund_payment_custom"
+                        android:padding="8dp"
+                        android:checked="false"
+                        android:layout_marginLeft="8dp" />
+
+                </RadioGroup>
 
                 <EditText
-                    android:layout_width="120dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:inputType="number"
                     android:ems="10"
-                    android:id="@+id/fund_payment_card_date"
-                    android:inputType="date"
-                    android:background="#ffcdcdcd"
-                    android:padding="8dp"
-                    android:text="MM/YY"
-                    android:layout_marginRight="24dp" />
-
-                <EditText
-                    android:layout_width="120dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:id="@+id/fund_payment_card_cvc"
-                    android:background="#ffcdcdcd"
-                    android:padding="8dp"
-                    android:text="CVC"
-                    android:inputType="number" />
+                    android:id="@+id/fund_payment_custom_amt"
+                    android:text="132"
+                    android:textSize="18dp"
+                    android:layout_gravity="bottom" />
             </LinearLayout>
 
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="24dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/fund_payment_display_name"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ffcdcdcd"
+                    android:padding="8dp"
+                    android:hint="Name you want to appear as" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/fund_payment_card_name"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ffcdcdcd"
+                    android:padding="8dp"
+                    android:layout_marginTop="16dp"
+                    android:singleLine="false"
+                    android:hint="Name on card" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/fund_payment_card_num"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#ffcdcdcd"
+                    android:padding="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Card number" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <EditText
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/fund_payment_card_date"
+                        android:inputType="date"
+                        android:background="#ffcdcdcd"
+                        android:padding="8dp"
+                        android:text="MM/YY"
+                        android:layout_marginRight="24dp" />
+
+                    <EditText
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/fund_payment_card_cvc"
+                        android:background="#ffcdcdcd"
+                        android:padding="8dp"
+                        android:text="CVC"
+                        android:inputType="number" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fund_payment_fragment_pay_button"
+                android:id="@+id/button2"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/accent_material_light"
+                android:padding="8dp"
+                android:layout_margin="8dp" />
+
         </LinearLayout>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/fund_payment_fragment_pay_button"
-            android:id="@+id/button2"
-            android:layout_gravity="center_horizontal"
-            android:background="@color/accent_material_light"
-            android:padding="8dp" />
-
-    </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

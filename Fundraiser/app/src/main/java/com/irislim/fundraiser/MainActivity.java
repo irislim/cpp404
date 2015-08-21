@@ -26,7 +26,9 @@ public class MainActivity extends ActionBarActivity
         FundPastFragment.OnFragmentInteractionListener,
         FundTopDonorsFragment.OnFragmentInteractionListener,
         FundItemFragment.OnFragmentInteractionListener,
-        FundPaymentFragment.OnFundPaymentListener {
+        FundPaymentFragment.OnFundPaymentListener,
+        FundEditFragment.OnFragmentInteractionListener
+{
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -99,6 +101,14 @@ public class MainActivity extends ActionBarActivity
         FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.beginTransaction()
                 .replace(R.id.container, FundPaymentFragment.newInstance())
+                .commit();
+    }
+
+    public void fundEditButtonOnClick() {
+        // update the main content by replacing fragments
+        FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, FundEditFragment.newInstance())
                 .commit();
     }
 

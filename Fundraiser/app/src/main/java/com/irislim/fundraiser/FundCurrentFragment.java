@@ -7,6 +7,7 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 /**
@@ -17,7 +18,7 @@ import android.view.ViewGroup;
  * Use the {@link FundCurrentFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FundCurrentFragment extends Fragment {
+public class FundCurrentFragment extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -28,7 +29,7 @@ public class FundCurrentFragment extends Fragment {
 //    private String mParam2;
 
     private OnFragmentInteractionListener mListener;
-
+    private Button btn;
     /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
@@ -62,14 +63,10 @@ public class FundCurrentFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fund_current, container, false);
-    }
-
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
+        View view = inflater.inflate(R.layout.fragment_fund_current, container, false);
+        btn = (Button) view.findViewById(R.id.fragment_fund_edit);
+        btn.setOnClickListener(this);
+        return view;
     }
 
     @Override
@@ -89,6 +86,13 @@ public class FundCurrentFragment extends Fragment {
         mListener = null;
     }
 
+    @Override
+    public void onClick(View v) {
+        if (mListener != null) {
+            mListener.fundEditButtonOnClick();
+        }
+    }
+
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated
@@ -100,8 +104,7 @@ public class FundCurrentFragment extends Fragment {
      * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
-        // TODO: Update argument type and name
-        public void onFragmentInteraction(Uri uri);
+        void fundEditButtonOnClick();
     }
 
 }
