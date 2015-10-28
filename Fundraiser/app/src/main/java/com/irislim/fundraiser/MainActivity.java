@@ -27,7 +27,8 @@ public class MainActivity extends ActionBarActivity
         FundTopDonorsFragment.OnFragmentInteractionListener,
         FundItemFragment.OnFragmentInteractionListener,
         FundPaymentFragment.OnFundPaymentListener,
-        FundEditFragment.OnFragmentInteractionListener
+        FundEditFragment.OnFragmentInteractionListener,
+        FundPaidFragment.OnFragmentInteractionListener
 {
 
     /**
@@ -112,6 +113,22 @@ public class MainActivity extends ActionBarActivity
                 .commit();
     }
 
+    public void fundPayConfirmButtonOnClick() {
+        // update the main content by replacing fragments
+        FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, FundPaidFragment.newInstance())
+                .commit();
+    }
+
+    public void fundItemButtonOnClick() {
+        // update the main content by replacing fragments
+        FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, FundItemFragment.newInstance())
+                .commit();
+    }
+
     public void restoreActionBar() {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
@@ -153,7 +170,7 @@ public class MainActivity extends ActionBarActivity
         Log.d("onFragmentInteraction:", uri.getPath());
     }
 
-    @Override
+/*    @Override
     public void onButtonClick(String value) {
         Log.d("onButtonClick", value);
     }

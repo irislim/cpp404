@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.irislim.fundraiser.FundPaidFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/fund_paid_fragment_goback"
+        android:id="@+id/fund_paid_thankyou_button"
+        android:background="@color/accent_material_light"
+        android:onClick="fundItemButtonOnClick"
+        android:layout_gravity="center" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="100dp"
+        android:text="@string/fund_paid_fragment_thankyou"
+        android:layout_gravity="center_horizontal|top"
+        android:textSize="30dp"
+        android:gravity="center_horizontal"
+        android:layout_margin="50dp" />
+
+</FrameLayout>

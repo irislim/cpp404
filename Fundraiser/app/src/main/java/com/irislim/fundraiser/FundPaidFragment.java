@@ -13,34 +13,35 @@ import android.widget.Button;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link FundPaymentFragment.OnFundPaymentListener} interface
+ * {@link FundPaidFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link FundPaymentFragment#newInstance} factory method to
+ * Use the {@link FundPaidFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FundPaymentFragment extends Fragment implements View.OnClickListener {
+public class FundPaidFragment extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
     // TODO: Rename and change types of parameters
-//    private String mParam1;
-//    private String mParam2;
+ //   private String mParam1;
+ //   private String mParam2;
 
-    private OnFundPaymentListener mListener;
+    private OnFragmentInteractionListener mListener;
     private Button btn;
 
     /**
      * Use this factory method to create a new instance of
-     * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      *
-     * @return A new instance of fragment FundPaymentFragment.
+     * @param param1 Parameter 1.
+     * @param param2 Parameter 2.
+     * @return A new instance of fragment FundPaidFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static FundPaymentFragment newInstance(/*String param1, String param2*/) {
-        FundPaymentFragment fragment = new FundPaymentFragment();
+    public static FundPaidFragment newInstance(/*String param1, String param2*/) {
+        FundPaidFragment fragment = new FundPaidFragment();
         Bundle args = new Bundle();
 //        args.putString(ARG_PARAM1, param1);
 //        args.putString(ARG_PARAM2, param2);
@@ -48,7 +49,7 @@ public class FundPaymentFragment extends Fragment implements View.OnClickListene
         return fragment;
     }
 
-    public FundPaymentFragment() {
+    public FundPaidFragment() {
         // Required empty public constructor
     }
 
@@ -65,16 +66,16 @@ public class FundPaymentFragment extends Fragment implements View.OnClickListene
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_fund_payment, container, false);
-        btn = (Button) view.findViewById(R.id.fund_payconfirm_button);
+        View view = inflater.inflate(R.layout.fragment_fund_paid, container, false);
+        btn = (Button) view.findViewById(R.id.fund_paid_thankyou_button);
         btn.setOnClickListener(this);
         return view;
     }
 
-    @Override
+    // TODO: Rename method, update argument and hook method into UI event
     public void onClick(View v) {
         if (mListener != null) {
-            mListener.fundPayConfirmButtonOnClick();
+            mListener.fundItemButtonOnClick();
         }
     }
 
@@ -82,7 +83,7 @@ public class FundPaymentFragment extends Fragment implements View.OnClickListene
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         try {
-            mListener = (OnFundPaymentListener) activity;
+            mListener = (OnFragmentInteractionListener) activity;
         } catch (ClassCastException e) {
             throw new ClassCastException(activity.toString()
                     + " must implement OnFragmentInteractionListener");
@@ -105,8 +106,9 @@ public class FundPaymentFragment extends Fragment implements View.OnClickListene
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
      */
-    public interface OnFundPaymentListener {
-        public void fundPayConfirmButtonOnClick();
+    public interface OnFragmentInteractionListener {
+        // TODO: Update argument type and name
+        public void fundItemButtonOnClick();
     }
 
 }
