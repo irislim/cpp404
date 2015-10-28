@@ -32,7 +32,7 @@
     <string name="fund_item_fragment_donors">donors</string>
     <string name="fund_item_fragment_long_description">123456789 123456789 12345679 123456789 123456789 123456789 123456789 123456789 12345679 123456789 123456789 123456789 123456789 123456789 12345679 123456789 123456789 123456789 123456789 123456789 12345679 123456789 123456789 123456789 123456789 123456789 12345679 123456789 123456789 123456789 123456789 123456789 12345679 123456789 123456789 123456789 </string>
 
-    <string name="fund_payment_fragment_custom">Custom Amount: $</string>
+    <string name="fund_payment_fragment_custom">$</string>
     <string name="fund_payment_fragment_pay_button">Pay with Card</string>
 
     <string name="fund_edit_fragment_title">Title: </string>

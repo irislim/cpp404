@@ -23,7 +23,6 @@
                 android:layout_margin="8dp" />
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -70,14 +69,15 @@
                 </RadioGroup>
 
                 <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="120dp"
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:ems="10"
                     android:id="@+id/fund_payment_custom_amt"
-                    android:text="132"
-                    android:textSize="18dp"
-                    android:layout_gravity="bottom" />
+                    android:hint="Custom Amount"
+                    android:textSize="14dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="-20dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -120,7 +120,7 @@
                     android:background="#ffcdcdcd"
                     android:padding="8dp"
                     android:layout_marginTop="16dp"
-                    android:text="Card number" />
+                    android:hint="Card number" />
 
                 <LinearLayout
                     android:orientation="horizontal"
@@ -130,24 +130,35 @@
                     android:layout_gravity="center_horizontal">
 
                     <EditText
-                        android:layout_width="120dp"
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:id="@+id/fund_payment_card_date"
                         android:inputType="date"
                         android:background="#ffcdcdcd"
                         android:padding="8dp"
-                        android:text="MM/YY"
+                        android:hint="Month"
                         android:layout_marginRight="24dp" />
 
                     <EditText
-                        android:layout_width="120dp"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/fund_payment_card_date"
+                        android:inputType="date"
+                        android:background="#ffcdcdcd"
+                        android:padding="8dp"
+                        android:hint="Year"
+                        android:layout_marginRight="24dp" />
+
+                    <EditText
+                        android:layout_width="80dp"
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:id="@+id/fund_payment_card_cvc"
                         android:background="#ffcdcdcd"
                         android:padding="8dp"
-                        android:text="CVC"
+                        android:hint="CVC"
                         android:inputType="number" />
                 </LinearLayout>
 
