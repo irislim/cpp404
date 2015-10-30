@@ -35,9 +35,9 @@
     <string name="fund_payment_fragment_custom">$</string>
     <string name="fund_payment_fragment_pay_button">Pay with Card</string>
 
-    <string name="fund_edit_fragment_title">Title: </string>
-    <string name="fund_edit_fragment_goal">Goal: $</string>
-    <string name="fund_edit_fragment_long_description">Long description: </string>
+    <string name="fund_edit_fragment_title">Title</string>
+    <string name="fund_edit_fragment_goal">Target sum: $</string>
+    <string name="fund_edit_fragment_long_description">Long description</string>
     <string name="fund_edit_fragment_choose_pic_button">Choose picture</string>
     <string name="fund_edit_fragment_take_pic_button">Take picture</string>
     <string name="fund_edit_fragment_archive_button">Archive</string>

@@ -27,16 +27,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/editText"
-            android:text="@string/fund_edit_fragment_title"
             android:layout_margin="8dp"
             android:background="#ffcdcdcd"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:hint="@string/fund_edit_fragment_title" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ffcdcdcd"
+            android:background="#00cdcdcd"
             android:layout_margin="8dp">
 
             <TextView
@@ -50,23 +50,25 @@
                 android:id="@+id/textView3" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/editText2"
-                android:text="5000"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:background="#ffcdcdcd"
+                android:autoText="false"
+                android:inputType="number" />
         </LinearLayout>
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/editText3"
-            android:text="@string/fund_edit_fragment_long_description"
             android:layout_margin="8dp"
             android:background="#ffcdcdcd"
             android:padding="8dp"
             android:layout_weight="1.1"
-            android:gravity="top|left" />
+            android:gravity="top|left"
+            android:hint="@string/fund_edit_fragment_long_description" />
 
         <LinearLayout
             android:orientation="horizontal"
