@@ -129,6 +129,16 @@ public class MainActivity extends ActionBarActivity
                 .commit();
     }
 
+    public void fundEditArchiveButtonOnClick(String value) {
+        // update the main content by replacing fragments
+        Log.d("fundEditArcBtnOnClick", value);
+    }
+
+    public void fundEditSaveButtonOnClick(String value) {
+        // update the main content by replacing fragments
+        Log.d("fundEditSaveBtnOnClick", value);
+    }
+
     public void restoreActionBar() {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
